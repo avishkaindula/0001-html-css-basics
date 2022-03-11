@@ -1,0 +1,53 @@
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+ol {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+  color: #161a1d;
+  list-style: circle;
+}
+
+li {
+  list-style: square;
+  list-style: none;
+}
+
+/* Rules that apply to parents are also applied to the children and to 
+the children of the children (which are known as descendants). */
+/* Defining the list-style of the children (li)(square)(none) overrides the list-style 
+of the parent (ol)(circle). */
+/*If there are "two" list-style property values (square)(none) applied for the same 
+children (li) then the "second" list-style property (none) is applied to the children.*/
+/* Ancestor is the parent of the parent. */
+
+/*
+Logic Rules of CSS
+
+Inheritance
+container rules apply to descendants
+  ex - rules of (ol) also applies to (li).
+
+Cascading Style Sheets
+Multiple rules can be applied to the same element.
+  ex - list-style rule is applied to (li) from both (ol) and (li) elements.
+
+Specificity
+More specific selector's (li) rule wins over the less specific selector's (ol) rule.
+  ex - (li)'s list-style: none; wins over (ol)'s list-style: circle;
+*/
+
+#main-goal {
+  color: #a50000;
+}
+
+a {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}

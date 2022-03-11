@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/shared.css" rel="stylesheet" />
+    <link href="styles/daily-challenge.css" rel="stylesheet" />
+    <!--We should add the shared css file "before" the unique css file of the page.-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- This line adds the favicon to the page. -->
+    <title>My Daily Challenge</title>
+  </head>
+  <body>
+    <div id="main-div">
+      <!-- div is a non semantic block element. div is used to select specific elements.
+      ex- this main-div have been used to select <img>, <h1> and <p> together. -->
+      <img src="images/web-image.jpg" alt="A Trophy" />
+      <h1>Indula's Challenge for <span>24th of February 2022</span></h1>
+      <!-- div is a non semantic inline element. <span> is used to select a specific part
+      of the content of an element. 
+      ex- In here, <span> is used to select "24th of February 2022" part -->
+      <p id="todays-challenge">
+        Learn the basics of web development - Specifically dive into HTML & CSS
+      </p>
+    </div>
+    <div id="footer-div">
+      <p>
+        Explore the
+        <a href="full-week.html">list of goals</a>
+      </p>
+    </div>
+  </body>
+</html>

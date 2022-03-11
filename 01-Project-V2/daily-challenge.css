@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+  /*This color is assigned as a rgb value.*/
+  margin: 50px;
+}
+/*images inside the body is also treated as text. So when we
+text align the entire body to the center, the images on that 
+body is also aligned to the center.*/
+/*margin element add some spacing around elements.*/
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+p {
+  font-family: "Fira Sans", sans-serif;
+  color: #566f83;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  /*imported fonts should be added using single quotes*/
+  /*We can use another font as a fallback font.*/
+  /*In here, sans-serif is a fallback font.*/
+  /*If Oswald fails to load, sans-serif is loaded instead*/
+  color: #565c61;
+  /*This color is assigned as as a hex value.*/
+}
+/*This is a global css*/
+/*font-family is a css property*/
+/*sans-serif is a value of the font-family property*/
+/*this global css applies to every p and h1 tag.*/
+/*In here, p and h1 are known as selectors*/
+a {
+  color: rgb(167, 1, 78);
+  text-decoration: none;
+}
+/*When setting text-decoration to none, the default underline 
+of the text disappears.*/
+a:hover {
+  text-decoration: underline;
+}
+/*hover is a pseudo selector. Which means properties under this a tag only
+appear when hovered over it*/
+/*So the underline of the text only appear when hovered over it*/
+#todays-challenge {
+  color: rgb(170, 96, 83);
+  font-weight: bold;
+  font-size: 52px;
+}
+/*This is known as a id selector.*/
+/*px is a unit for describing the value of a size. px is a responsive value.
+Therefore we can use this unit without worrying that this could be vary on 
+different screen sizes.*/

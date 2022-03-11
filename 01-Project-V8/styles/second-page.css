@@ -1,0 +1,100 @@
+body {
+  margin: 20px;
+}
+
+h1 {
+  /* margin: 12px; */
+  /*This means 12px to top, right, bottom and left*/
+  /* margin: 12px 10px 8px 9px; */
+  /*This means 12px to top, 10px to right, 8px to bottom and 9px to left*/
+  margin: 0;
+  /*This means 12px to top and bottom, and 0px to left and right*/
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(71, 62, 62);
+  /*This (h1) color overrides the (h1) color defined on the shared.css file*/
+}
+
+ol {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+  color: #161a1d;
+  list-style: none;
+  width: 500px;
+  margin: 36px auto 0 auto;
+  /*This has added auto margin size to the left and right. This centers the element.*/
+  padding: 0;
+}
+
+li {
+  padding: 16px;
+  margin: 32px;
+  background-color: rgb(223, 136, 124);
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  /* Values of box-shadow property
+  offset of x axis
+  offset of y axis
+  blur radius
+  color of box
+  "a" in rgba defines the opacity of the color */
+}
+
+#main-goal {
+  color: #a50000;
+}
+
+a {
+  padding: 12px 48px;
+  border: 3px solid rgb(167, 1, 7);
+  /*3px - border size*/
+  /*solid - border type*/
+  /*color - border color*/
+  font-size: 24px;
+  background-color: rgb(167, 1, 78);
+  /*This (a) color overrides the (a) color defined on the shared.css file*/
+  color: white;
+  border-radius: 4px;
+  /* margin-top: 50px; */
+  /* This margin-top property does not have any effect on the <a> element.
+  The reason is because <a> is an inline element. We cannot add top or bottom
+  margin to a inline element. however left and right margins can be applied to
+  inline elements. */
+  /* However we can apply margins to <a> element by making it a
+  inline-block hybrid element. We can do this by using the display property */
+  display: inline-block;
+  /* Now we can add margins to this <a> element. */
+  margin: 10px 0;
+}
+
+a:hover {
+  text-decoration: none;
+  /*This (a:hover) text-decoration overrides the (a:hover) text-decoration 
+  defined on the shared.css file*/
+  background-color: rgb(180, 12, 90);
+}
+
+header p {
+  margin: 12px 0;
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  color: #565c61;
+}
+/*This is a descendant combinator. This properties only target the <p>'s of the header, 
+not the <p>'s of the main. */
+
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: "Oswald", sans-serif;
+}
+
+main p {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+  font-size: 20px;
+}
+
+.highlight-goal {
+  background-color: rgb(226, 88, 70);
+  /*This background-color overrides the color of <li>*/
+}

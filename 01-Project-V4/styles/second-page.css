@@ -1,0 +1,22 @@
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+p {
+  font-size: 17px;
+  color: #161a1d;
+}
+
+#main-goal {
+  color: #a50000;
+}
+
+a {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}

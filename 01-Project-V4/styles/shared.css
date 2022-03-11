@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #565c61;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  color: rgb(167, 1, 78);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*The css properties which are contained inside the shared css file
+must not have duplicates inside the second-page.css and the daily-challenge.css file.*/
+
+/*If a specific property has different values for the second-page.css  file and for the 
+daily-challenge.css file, that property must not be contained inside the 
+shared.css file. Instead we should have separate property tags inside those css files
+and then we can assign separate values of that property for both of those pages.
+ex: the margin property cannot be added inside the shared.css file because it has
+different values for the daily-challenge.css file and for the second-page.css file.
+So instead we should create separate margin properties inside daily-challenge.css
+file and second-page.css file and then we can assign different margin values for
+those pages.*/
+
+/*If there's a property that's only applied for the second-page.css file and have
+nothing to do with the daily-challenge.css file, that property should be contained
+inside the second-page.css file, not inside the shared.css file.*/
